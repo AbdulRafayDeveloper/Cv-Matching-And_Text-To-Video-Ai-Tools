@@ -15,8 +15,6 @@ UPLOAD_FOLDER_FILES = "public/assets/cv"
 if not os.path.exists(UPLOAD_FOLDER_FILES):
     os.makedirs(UPLOAD_FOLDER_FILES)
 
-groq = Groq(api_key="")
-
 def extract_text_from_pdf(pdf_path):
     """Extracts text from a PDF file."""
     try:
